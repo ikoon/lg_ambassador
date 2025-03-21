@@ -767,6 +767,32 @@
   font-size: 32px;
   color: #9c9c9c;
 }
+.submit-done-box .txt-msg {
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -0.4px;
+}
+.submit-done-box .txt-msg .dot {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  text-align: left;
+}
+.submit-done-box .txt-msg .dot:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.submit-done-box.mgt30 {
+  margin-top: 30px;
+}
 @media screen and (max-width: 767px) {
   .submit-done-box {
     margin-bottom: 50px;
@@ -786,6 +812,19 @@
   .submit-done-box .sub-em {
     margin-top: 10px;
     font-size: 18px;
+  }
+  .submit-done-box .txt-msg {
+    margin-top: 40px;
+    margin-bottom: -10px;
+    font-size: 18px;
+  }
+  .submit-done-box .txt-msg .dot {
+    padding-left: 12px;
+  }
+  .submit-done-box .txt-msg .dot:before {
+    top: 8px;
+    width: 4px;
+    height: 4px;
   }
 }
 
