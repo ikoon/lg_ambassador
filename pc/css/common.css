@@ -59,6 +59,7 @@ body {position:relative; width:100%; height:100%; margin:0; padding:0; backgroun
     width: 100%;
     height: 100%;
     object-fit: cover;
+    outline: none; border: 0;
   }
 
 
