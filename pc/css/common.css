@@ -228,7 +228,7 @@ select {-ms-user-select:none; user-select:none; -ms-appearance:none; appearance:
     .sec_2 a._current img._on {display:block;}
     .sec_2 a._current img._off {display:none;}
 
-    .sec_2 .layout {display: flex; align-items: center; pointer-events: auto;}
+    .sec_2 .layout {display: flex; align-items: center; pointer-events: auto;max-width: none;}
     .sec_2 .layout a {display: flex; align-items: center; width: 50%;}
     .sec_2 .layout img {width: 100%;}
     .sec_5 .button-apply {
