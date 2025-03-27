@@ -37,7 +37,24 @@ body {position:relative; width:100%; height:100%; margin:0; padding:0; backgroun
 .mobile_wrap {width:720px; margin-left:440px; background:#fff;}
 
 .section {position:relative; width:100%; overflow:hidden;}
-.layout {position:relative; z-index:0; pointer-events:none; -webkit-user-drag:none; user-drag:none; user-select:none;}
+.sec_1 {background-color: #fdfef4}
+.sec_2 {background-image: linear-gradient(to right, #ff4040 50%, #2a2a2a 50%);}
+.sec_3 {background-color: #fe4340}
+.sec_4 {background-color: #fefef6}
+.sec_5 {background-color: #eaeaea}
+.sec_6 {background-color: #f23f38}
+.sec_7 {background-color: #fff}
+.sec_8 {background-color: #575757}
+.layout {
+    position:relative; 
+    z-index:0;
+    pointer-events:none; 
+    -webkit-user-drag:none;
+    user-drag:none; 
+    user-select:none;
+    max-width: 768px;
+    margin: 0 auto;
+}
 .layout img {display:block; width:100%;}
 
 .ambassdor-ani .video-container {
@@ -76,8 +93,11 @@ body {position:relative; width:100%; height:100%; margin:0; padding:0; backgroun
 .sec_2 a._current img._off {display:none;}
 
 .sec_2 .layout {display: flex; align-items: center; pointer-events: auto;}
-.sec_2 .layout a {display: flex; align-items: center; width: 50%;}
-.sec_2 .layout img {width: 100%;}
+.sec_2 .layout a {display: flex; align-items: center; width: 50%; background-color: #2a2a2a}
+.sec_2 .layout a._current {background-color: #ff4040;}
+.sec_2 .layout a:first-child {text-align: right; justify-content: flex-end;}
+.sec_2 .layout a:last-child {text-align: left; justify-content: flex-start;}
+.sec_2 .layout img {width: 100%; max-width: 384px;}
 
 
 .video-lay {
@@ -189,6 +209,15 @@ select {-ms-user-select:none; user-select:none; -ms-appearance:none; appearance:
 @media only screen and (max-width: 767px) {
     .wrap._pc {display:none;}
     .wrap._mo {display:block;}
+
+    .layout {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .ambassdor-ani {
+        max-width: 768px;
+        margin: 0 auto;
+    }
 
     .sec_2 { position:relative; width:100%; padding-top:10.66%; max-width: 100%; margin:0 auto; z-index: 10;}
     .sec_2 ._fixed_wrap {position:absolute; left:0; top:0; transform:translateX(0); width:100%; max-width:100%;}
